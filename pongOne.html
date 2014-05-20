@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+      <head>
+	           <meta charset="UTF-8">
+			   <title>PingPong</title>
+			   
+			   <style type="text/css">
+			   
+			   
+			            body
+						{
+						   margin-left: 300px;
+						   margin-right: 150px;
+						   margin-top: 70px;
+						   BACKGROUND-COLOR: black;
+						   color:white;
+						}
+						
+						
+			           #playground
+					   {
+					      background: #326498  ;
+						  width: 600px;
+						  height: 400px;
+						  position: relative;
+						  overflow: hidden;
+						  border-radius:30px;
+					   }
+					   
+					   #ball
+					   {
+					      background: white;
+						  position: absolute;
+						  border-radius: 10px;
+						  top: 200px;
+						  left: 200px;
+						  width: 20px;
+                          height: 20px;						  
+					   }
+					   
+					   
+					   #ball2
+					   {
+					      background: black;
+						  position: absolute;
+						  border-radius: 10px;
+						  top: 100px;
+						  left: 100px;
+						  width: 20px;
+                          height: 20px;						  
+					   }
+					   
+					   .paddle           
+					   {
+					      background: white;
+						  left: 40px;
+						  top: 180px;
+						  width: 20px;
+						  height: 120px;
+						  position: absolute;
+						  PADDING: 3PX;
+						  border-radius: 30px;
+						  color:black;
+						  
+					   }
+					   
+					   #paddleB
+					   {
+					      left: 550px;
+					   }
+			   
+			   </style>
+			   
+	  </head>
+	  
+	  
+	  <body>
+	       
+
+
+         <div id="fb-root"></div>
+         <script>
+         (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));</script>  
+         
+
+	       <!-- facebook sdk end -->
+		   
+		   <header><h1 style="color:WHITE">PingPong</h1></header>
+		   <div id="game">
+		   
+		         <div id="scorecard">
+				    <div id="a">SCORE A:   <span id="sa" style="color:white">   0</span></div>
+					<div id="b">SCORE B:   <span id="sb" style="color:white">  0</span>
+					</div>
+					<br />
+				 </div>
+		   
+		           <div id="playground">
+				       <div id="paddleA" class="paddle">A</div>
+					   <div id="paddleB" class="paddle">B</div>
+					   <div id="ball"></div>
+					   <div id="ball2"></div>
+				   </div>
+				   <BR />
+				   LEGEND&nbsp &nbsp 
+				   <footer STYLE="COLOR:#D1480E">PLAYER B: PRESS ARROW  [UP] - [DOWN] <BR /> PLAYER A: PRESS KEY [W] - [S]<br />
+				   RESTART :PRESS F5 
+				   <BR />	<div id="auth" align="right" style="color:#326498;font-size:130%;">Author: Basar Sohail Choudhary</div>
+				   </footer>
+		   
+		   </div>
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   <script src="js/jq.js"></script>
+		   <script src="js/ping2.js"></script>
+		   
+		   <div class="fb-comments" data-href="http://http://testgame.uphero.com/" data-numposts="1000" data-colorscheme="light"></div>
+		    
+	  </body>
+
+
+</html>
